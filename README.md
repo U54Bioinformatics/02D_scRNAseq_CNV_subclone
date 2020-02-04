@@ -39,7 +39,7 @@ Cell2 Endotheial
 
   The format is tab-delimited and has no column header, simply providing the gene name, chromosome, and gene span:
 
-```R
+```r
 A    Chr2	14363	27239
 B    ChrX 761586 762902
 C    Chr5 1152288 1167411
@@ -48,7 +48,7 @@ C    Chr5 1152288 1167411
 
 ### scripts
 
-```R
+```r
 # this script is reproducible in the R docker image on unicron
 
 # load librarys
@@ -84,7 +84,7 @@ write.table(rbind(fibro_annot, singler_annot),
 filtered_fibro_counts_matrix <- 
 inner_join(filtered_counts, fibro_counts, by = "Gene.Symbol") %>% 
 	`rownames<-`(c(.$Gene.Symbol)) %>% 
-	.[, !colnames(.) %in% "Gene.Symbol"] %>% 
+	.[, !colnames(.) %in% c("Gene.Symbol")] %>% 
 	as.matrix
  
 # do infercnv
