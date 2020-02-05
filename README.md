@@ -105,4 +105,8 @@ k_obs_groups = 3,
 denoise=T, HMM=T,  
 num_threads = 23)
 ```
+## References and documentation 
+Reference: [Anoop P. Patel, Itay Tirosh, et al. Science. 2014 Jun 20: 1396-1401](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4123637/)
+
+Wiki: Broad Institute InferCNV home page (https://github.com/broadinstitute/inferCNV/wiki)
 
