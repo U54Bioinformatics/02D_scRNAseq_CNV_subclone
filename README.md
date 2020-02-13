@@ -110,3 +110,5 @@ Reference: [Anoop P. Patel, Itay Tirosh, et al. Science. 2014 Jun 20: 1396-1401]
 
 Wiki: Broad Institute InferCNV home page (https://github.com/broadinstitute/inferCNV/wiki)
 
+[Package Manual](https://bioconductor.org/packages/release/bioc/manuals/infercnv/man/infercnv.pdf)
+
