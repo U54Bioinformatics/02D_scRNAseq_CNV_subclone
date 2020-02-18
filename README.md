@@ -105,6 +105,14 @@ k_obs_groups = 3,
 denoise=T, HMM=T,  
 num_threads = 23)
 ```
+
+#### extract hclusts
+```r
+cutree(x@tumor_subclusters$hc$all_observations, k = 4)	
+
+#cr: Xuan 😊
+```
+
 ## References and documentation 
 Reference: [Anoop P. Patel, Itay Tirosh, et al. Science. 2014 Jun 20: 1396-1401](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4123637/)
 
