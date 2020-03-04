@@ -103,7 +103,12 @@ out_dir="./out-fibro-ref-k3",
 cluster_by_groups=F, 
 k_obs_groups = 3,
 denoise=T, HMM=T,  
-num_threads = 23)
+num_threads = 23, 
+# if you want to get plots as one of the outputs, turn these two into F
+## plotting steps takes pretty long time to finish, e.g., 200 cells dataset: "no plots" takes ~100sec, "with plots" takes >220sec.  
+no_plot = T, no_prelim_plot = T
+)
+
 ```
 
 #### extract hclusts
