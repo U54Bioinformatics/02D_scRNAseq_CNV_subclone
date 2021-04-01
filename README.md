@@ -1,4 +1,23 @@
 # InferCNV
+## If you wanted to run InferCNV using Betsy: 
+```
+GTF=/data/genomidata/genomes/Broad.hg19.RefSeq.NM_only.170811.gtf
+betsy_run.py --num_cores 10 \
+--input SignalFile --input_file counts.txt \
+--dattr SignalFile.preprocess=counts \
+--input GTFGeneModel --input_file ${GTF} \
+--output InferCNVAnalysis --output_file output_folder \
+--mattr reference_dataset=ref.counts.1.txt \
+--mattr reference_dataset2=ref.counts.2.txt \
+--mattr reference_name=ref.name.1 \
+--mattr reference_name2=ref.name.1 \
+--run
+```
+**_alternatives_**  
+If you do not want to generate plots--substitute _InferCNVAnalysis_ with _**InferCNVOutput**_.
+
+
+## If you wanted to run within R
 
 ### input files
 
